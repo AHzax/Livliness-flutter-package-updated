@@ -16,6 +16,7 @@
 - [Contributors](#contributors)
 
 <a name="whatIsLivelyness"></a>
+![Screenshot_20241101-173956](https://github.com/user-attachments/assets/5ae863dc-7acb-4c27-abfb-dc2442343548)
 
 ## What is the Livelyness Detection?
 
