@@ -95,7 +95,7 @@ class AndroidFaceDetectorPainter extends CustomPainter {
                   )
                   .toList(),
               true);
-          if (LivelynessDetection.instance.display) {
+          if (LivelynessDetection.instance.displayDots) {
             for (var element in faceContour.points) {
               canvas.drawCircle(
                 _croppedPosition(

@@ -15,8 +15,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
   //? =========================================================
   String? _capturedImagePath;
   final bool _isLoading = false;
-  bool _startWithInfo = true;
-  bool _showFacialVertices = false;
+  bool _startWithInfo = false;
+  bool _showFacialVertices = true;
   bool _allowAfterTimeOut = false;
   final List<LivelynessStepItem> _veificationSteps = [];
   int _timeOutDuration = 30;
@@ -24,7 +24,7 @@ class _ExampleScreenState extends State<ExampleScreen> {
   //* MARK: - Life Cycle Methods
   //? =========================================================
   @override
-  void initState() {
+  void initState() { 
     _initValues();
     super.initState();
   }
@@ -48,12 +48,7 @@ class _ExampleScreenState extends State<ExampleScreen> {
           isCompleted: false,
           detectionColor: Colors.amber,
         ),
-        LivelynessStepItem(
-          step: LivelynessStep.smile,
-          title: "Smile",
-          isCompleted: false,
-          detectionColor: Colors.green.shade800,
-        ),
+     
       ],
     );
     LivelynessDetection.instance.configure(
